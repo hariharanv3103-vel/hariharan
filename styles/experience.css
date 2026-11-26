@@ -1,0 +1,367 @@
+/* =========================================
+   EXPERIENCE SECTION — EDITORIAL TIMELINE
+   Seamless Cream & Gold Theme
+   ========================================= */
+
+.experience-section {
+  position: relative;
+  width: 100%;
+  padding: clamp(52px, 6.5vh, 80px) clamp(18px, 4.5vw, 76px);
+  background: transparent;
+  color: #24211d;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: visible;
+}
+
+.experience-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Header */
+.experience-header {
+  padding-bottom: 18px;
+  margin-bottom: clamp(26px, 3.5vh, 38px);
+  border-bottom: 1px solid rgba(189, 146, 89, 0.24);
+}
+
+.experience-accent-line {
+  width: 32px;
+  height: 2px;
+  margin-bottom: 10px;
+  background: #bd9259;
+}
+
+.experience-title {
+  margin: 0;
+  color: #211f1c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 4vw, 54px);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -1.8px;
+}
+
+.experience-title span {
+  color: #bd9259;
+}
+
+.experience-subtitle {
+  margin: 8px 0 0;
+  color: #6f675d;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Timeline Layout */
+.experience-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 2.8vw, 28px);
+  padding-left: 26px;
+}
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 6px;
+  width: 1.5px;
+  background: linear-gradient(180deg, #bd9259 0%, rgba(189, 146, 89, 0.2) 100%);
+}
+
+.experience-card {
+  position: relative;
+}
+
+.experience-marker {
+  position: absolute;
+  top: 26px;
+  left: -26px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fcf8f2;
+  border: 2px solid #bd9259;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #24211d;
+}
+
+/* Card Box */
+.experience-card-inner {
+  padding: clamp(20px, 2.6vw, 28px);
+  background: rgba(255, 253, 249, 0.92);
+  border: 1px solid #e2cfa9;
+  border-radius: 22px;
+  box-shadow: 0 10px 26px rgba(73, 53, 31, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.experience-card-inner:hover {
+  transform: translateY(-3px);
+  border-color: #c89f68;
+  box-shadow: 0 16px 34px rgba(73, 53, 31, 0.1);
+}
+
+/* Top Row */
+.experience-top-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .experience-top-row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.experience-period {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: #a97b3f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.experience-role {
+  margin: 0;
+  color: #211f1c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(20px, 2vw, 25px);
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+.experience-company {
+  margin: 4px 0 0;
+  color: #3a332b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.experience-company span {
+  color: #777067;
+  font-weight: 400;
+}
+
+/* Duration & Certificate ID Pills */
+.experience-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.experience-duration-pill {
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #24211d;
+  color: #fffaf3;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.experience-id-pill {
+  padding: 5px 12px;
+  border: 1px solid #dfc49e;
+  border-radius: 999px;
+  background: #f5ebdc;
+  color: #6b4d25;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Summary & Highlights */
+.experience-summary {
+  margin: 0 0 12px;
+  color: #5b5349;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.experience-highlights {
+  margin: 0 0 18px;
+  padding-left: 18px;
+  color: #3d362e;
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+.experience-highlights li {
+  margin-bottom: 5px;
+}
+
+.experience-highlights li::marker {
+  color: #bd9259;
+}
+
+/* Footer: Tech Stack + Certificate Button */
+.experience-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(189, 146, 89, 0.22);
+}
+
+@media (min-width: 768px) {
+  .experience-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.experience-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.experience-tech-pill {
+  padding: 4px 10px;
+  border: 1px solid #e6d6bf;
+  border-radius: 999px;
+  background: #f9f1e4;
+  color: #3a332b;
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.experience-cert-btn {
+  align-self: flex-start;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid #bd9259;
+  border-radius: 999px;
+  background: #fffdf9;
+  color: #24211d;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.experience-cert-btn:hover {
+  background: #24211d;
+  border-color: #24211d;
+  color: #fffaf3;
+}
+
+/* =========================================
+   CERTIFICATE PREVIEW MODAL
+   ========================================= */
+
+.exp-modal-backdrop {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(24, 20, 16, 0.68);
+  backdrop-filter: blur(4px);
+}
+
+.exp-modal-card {
+  width: 100%;
+  max-width: 720px;
+  max-height: 90svh;
+  overflow-y: auto;
+  padding: clamp(18px, 3vw, 26px);
+  border: 1px solid #d4b184;
+  border-radius: 22px;
+  background: #fcf8f2;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+.exp-modal-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.exp-modal-eyebrow {
+  margin: 0 0 4px;
+  color: #bd9259;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.exp-modal-title {
+  margin: 0;
+  color: #211f1c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(17px, 2.2vw, 22px);
+  font-weight: 700;
+}
+
+.exp-modal-close {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #dfc49e;
+  border-radius: 50%;
+  background: #fffdf9;
+  color: #24211d;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.exp-modal-close:hover {
+  background: #24211d;
+  color: #fff;
+}
+
+.exp-modal-image-box {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e2cfa9;
+  background: #fff;
+}
+
+.exp-modal-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  .experience-section {
+    padding: 44px 16px;
+  }
+
+  .experience-timeline {
+    padding-left: 20px;
+  }
+
+  .experience-marker {
+    left: -20px;
+  }
+}
